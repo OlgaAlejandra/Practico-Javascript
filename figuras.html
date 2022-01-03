@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./styles.css" />
+  <title>Figuras geométricas | Curso Práctico de JavaScript en Platzi</title>
+</head>
+<body>
+  <header>
+    <h1>
+      Figuras geométricas
+    </h1>
+  </header>
+  <section>
+    <h2 class="titleH2">Cálculo de area y perimetro</h2>
+
+    <form class="card__container" onsubmit="getSquareArea()">
+        <div class="card__header">
+            <div class="square"></div>
+            <h2>Square</h2>
+        </div>
+        <p>How long is each side of your square?</p>
+        <div class="input__container">
+            <input class="card__input" type="number" name="" id="square side" >
+            <select class="card__select">
+                <option value="0">cm</option>
+            </select>
+        </div>
+        <div class="button__container">
+            <button class="card__button" type="button" onclick="getSquarePerimeter()">Get perimeter</button>
+            <button class="card__button" type="button" onclick="getSquareArea()">Get area</button>
+        </div>
+        <div id="result__container" style="display: none;text-align: center;" class="result__container">
+        </div>
+    </form>
+
+    <form class="card__container" onsubmit="getSquareArea()" style="background-color: rgba(98, 0, 255, 0.625);">
+        <div class="card__header">
+            <div class="triangle"></div>
+            <h2>Triangle</h2>
+        </div>
+        <p>What are the measurements of your tringle?</p>
+        <span>Base:</span>
+        <input class="card__input" style="background-color: rgba(133, 58, 254, 0.8); width: 90%;" type="number"id="triangleBase" >
+        <span>Height:</span>
+        <input class="card__input" style="background-color: rgba(133, 58, 254, 0.8); width: 90%;" type="number"id="triangleHeight" >
+        <span>Side 1:</span>
+        <input class="card__input" style="background-color: rgba(133, 58, 254, 0.8); width: 90%;" type="number"id="triangleside1" >
+        <span>Side 2:</span>
+        <input class="card__input" style="background-color: rgba(133, 58, 254, 0.8); width: 90%;" type="number"id="triangleside2" >
+        <span>Side 3:</span>
+        <input class="card__input" style="background-color: rgba(133, 58, 254, 0.8); width: 90%;" type="number"id="triangleside3" >
+        <div style="display: flex; justify-content: center;">
+            <p>Unit: </p>
+            <select class="card__select">
+                    <option value="0">cm</option>
+                    <option value="0">m</option>
+            </select>
+        </div>
+        <div class="button__container" >
+            <button class="card__button" style="color:rgb(98, 0, 255)" type="button" onclick="getTrianglePerimeter()">Get perimeter</button>
+            <button class="card__button" style="color:rgb(98, 0, 255)" type="button" onclick="getTriangleArea()">Get area</button>
+        </div>
+        <div id="result__container--triangle" style="display: none;text-align: center;" class="result__container">
+    </div>
+    </form>
+
+    <form class="card__container" onsubmit="getSquareArea()" style="background-color: rgb(255, 196, 0);">
+        <div class="card__header">
+            <div class="Circle"></div>
+            <h2>Circle</h2>
+        </div>
+        <p>What are the measurements of your circle?</p>
+        <span>Radius:</span>
+        <input class="card__input" style="background-color: rgba(228, 186, 48, 0.986); width: 90%;" type="number"id="circleradius" >
+        <div style="display: flex; justify-content: center;">
+            <p>Unit: </p>
+            <select class="card__select">
+                    <option value="0">cm</option>
+                    <option value="0">m</option>
+            </select>
+        </div>
+        <div class="button__container" >
+            <button class="card__button" style="color:rgba(228, 186, 48, 0.986);" type="button" onclick="getCirclePerimeter()">Get Perimeter</button>
+            <button class="card__button" style="color:rgba(228, 186, 48, 0.986);" type="button" onclick="getCircleArea()">Get area</button>
+        </div>
+        <div id="result__container--circle" style="display: none;text-align: center;" class="result__container">
+    </div>
+    </form>
+    
+  </section>
+
+  <script src="./figuras.js"></script>
+</body>
+</html>
