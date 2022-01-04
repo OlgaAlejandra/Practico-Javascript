@@ -6,6 +6,11 @@ body{
     margin-left: 5%;
     background-repeat: repeat-x;
 }
+.imgMoney
+{
+    height: 2px;
+    width: 2px;
+}
 .titleH2
 {
     text-align: center;

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Porcentajes y Descuentos</title>
+</head>
+<body>
+
+    <h1>Porcentajes y Descuentos</h1>
+    <form class="card__container" onsubmit="getSquareArea()" style="background-color: rgba(86, 125, 252, 0.986);">
+        <div class="card__header">
+            <h2 class="titleH2">Calcula tu descuento</h2>
+        </div>
+        <span>Product Price:</span>
+        <input class="card__input" style="background-color: rgba(59, 100, 233, 0.986); width: 90%;" type="number"id="price" >
+        <span>Discount:</span>
+        <input class="card__input" style="background-color: rgba(59, 100, 233, 0.986); width: 90%;" type="number"id="discount" >
+        <div style="display: flex; justify-content: center;">
+        </div>
+        <div class="button__container" >
+            <button class="card__button" style="color:rgba(59, 100, 233, 0.986);" type="button" onclick="onClickButtonPriceDiscount()">Get Price</button>  
+        </div>
+        <p style="text-align: center;font-size: 25px;" class="result__container" id="ResultP"></p>
+
+    </div>
+    </form>
+    <script src="descuentos.js"></script>
+</body>
+</html>
